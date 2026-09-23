@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang=ru>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Фабрика Заготовок | Кулинарный клуб Веры Малыгиной</title>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+<style>:root{--cream:#F5EFE6;--warm-white:#FBF8F2;--pink:#D4768A;--pink-light:#EDCAD2;--pink-dark:#B85A6D;--yellow:#EDE8A8;--yellow-dark:#D4CE7A;--text:#5B5A5A;--text-mid:#5C4F47;--text-light:#8C7D74;--dark:#F5F2C5;--border:rgba(44,36,32,0.08);--shadow:0 4px 32px rgba(44,36,32,0.08);--shadow-lg:0 16px 64px rgba(44,36,32,0.14);--r:20px;--r-sm:12px;--transition:all 0.4s cubic-bezier(0.4,0,0.2,1)}*,::after,::before{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Inter,'Century Gothic',CenturyGothic,Trebuchet MS,sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;line-height:1.4}.container{max-width:1180px;margin:0 auto;padding:0 28px}h1{font-family:Inter,'Century Gothic',sans-serif;font-size:clamp(2.6rem, 5vw, 4.5rem);font-weight:700;line-height:.9;letter-spacing:-.02em;color:var(--text)}h2{font-family:Inter,'Century Gothic',sans-serif;font-size:clamp(1.8rem, 3.2vw, 2.8rem);font-weight:700;line-height:1;letter-spacing:-.01em;color:var(--text)}h3{font-size:1.15rem;font-weight:700;line-height:1.1;margin-bottom:.6rem;color:var(--text)}p{font-size:1rem;line-height:1.5;color:var(--text-mid);margin-bottom:1rem}p:last-child{margin-bottom:0}.label{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:5px 14px;border-radius:50px;margin-bottom:1.4rem;background:rgba(212,118,138,.12);color:var(--pink)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 36px;border-radius:50px;font-family:inherit;font-size:1rem;font-weight:700;text-decoration:none;border:none;cursor:pointer;transition:var(--transition);letter-spacing:.01em;background:var(--pink);color:#fdf3f3;box-shadow:0 8px 32px rgba(212,118,138,.35)}.btn:hover{background:var(--pink-dark);transform:translateY(-3px);box-shadow:0 16px 48px rgba(212,118,138,.45)}.btn-ghost{background:0 0;color:var(--pink);border:2px solid var(--pink);box-shadow:none}.btn-ghost:hover{background:var(--pink);color:#fdf3f3}.reveal{opacity:0;transform:translateY(36px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}.reveal-delay-1{transition-delay:0.1s}.reveal-delay-2{transition-delay:0.2s}.reveal-delay-3{transition-delay:0.3s}.reveal-delay-4{transition-delay:0.4s}header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:14px 0;background:rgba(245,239,230,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:var(--transition)}.header-inner{display:flex;justify-content:space-between;align-items:center;min-height:56px}.logo{font-family:'Century Gothic',CenturyGothic,AppleGothic,'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:1.3rem;font-weight:600;color:var(--text);text-decoration:none;letter-spacing:-.01em}.logo span{color:var(--pink)}nav ul{display:flex;list-style:none;gap:2px;align-items:center}nav ul li a{color:var(--text-mid);text-decoration:none;font-size:.85rem;font-weight:600;padding:7px 13px;border-radius:50px;transition:var(--transition)}nav ul li a:hover{color:var(--pink);background:rgba(212,118,138,.08)}nav ul li .btn{padding:8px 20px;font-size:.85rem}.mobile-btn{display:none;background:0 0;border:none;font-size:1.4rem;color:var(--text);cursor:pointer}.hero{padding-top:130px;padding-bottom:100px;background:var(--cream);position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center}.hero-noise{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.4}.hero-inner{position:relative;z-index:1;width:100%;display:grid;grid-template-columns:1fr 440px;gap:80px;align-items:center}.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-mid);margin-bottom:1.4rem}.hero-eyebrow::before{content:'';width:32px;height:2px;background:var(--pink);border-radius:2px}.hero-title{margin-bottom:1.4rem}.hero-title span{color:var(--pink)}.hero-sub{font-size:1.1rem;color:var(--text-mid);line-height:1.5;margin-bottom:1.8rem}.hero-list{list-style:none;margin-bottom:2rem}.hero-list li{display:flex;align-items:flex-start;gap:12px;font-size:.97rem;line-height:1.4;color:var(--text-mid);padding:9px 0;border-bottom:1px solid var(--border)}.hero-list li:last-child{border-bottom:none}.hero-list li::before{content:'✓';color:var(--pink);font-weight:700;font-size:1rem;flex-shrink:0;margin-top:1px}.hero-highlight{background:var(--warm-white);border-radius:var(--r-sm);padding:16px 20px;margin-bottom:1.8rem;border:1px solid var(--border);font-size:.97rem;font-weight:600;color:var(--text)}.hero-highlight span{color:var(--pink)}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.hero-photo-col{position:relative}
+
+/* ═══ ИСПРАВЛЕНИЕ: убрана обрезка фото на hero ═══ */
+.hero-photo-frame{position:relative;border-radius:32px;overflow:hidden;box-shadow:var(--shadow-lg)}
+.hero-photo-frame img{width:100%;height:auto;display:block}
+/* ════════════════════════════════════════════════ */
+
+.hero-photo-frame::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,transparent 60%,rgba(30,26,23,.12))}.hero-badge{position:absolute;bottom:-16px;left:-16px;background:var(--warm-white);border-radius:18px;padding:14px 20px;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:12px;z-index:2}.hero-badge .b-icon{width:44px;height:44px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}.hero-badge .b-text strong{display:block;font-size:.95rem;color:var(--pink);font-weight:700}.hero-badge .b-text span{font-size:.72rem;color:var(--text-light)}.hero-tag{position:absolute;top:20px;right:-16px;background:var(--pink);color:#fdf3f3;border-radius:50px;padding:9px 18px;font-size:.78rem;font-weight:700;letter-spacing:.04em;box-shadow:0 8px 24px rgba(212,118,138,.4);z-index:2;white-space:nowrap}.how-it-works{background:var(--warm-white);padding:100px 0}.section-header{text-align:center;margin-bottom:64px}.section-header h2{margin-bottom:1rem}.section-header p{font-size:1.05rem;color:var(--text-light);max-width:560px;margin:0 auto}.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}.steps-grid::before{content:'';position:absolute;top:36px;left:calc(12.5% + 12px);right:calc(12.5% + 12px);height:2px;background:linear-gradient(90deg,var(--pink-light),var(--yellow),var(--pink-light));z-index:0}.step-card{text-align:center;padding:0 16px;position:relative;z-index:1}.step-num-circle{width:72px;height:72px;border-radius:50%;background:var(--warm-white);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--pink);margin:0 auto 1.2rem;box-shadow:var(--shadow);transition:var(--transition)}.step-card:hover .step-num-circle{background:var(--pink);color:#fdf3f3;transform:scale(1.08);box-shadow:0 12px 40px rgba(212,118,138,.35)}.step-img{width:100%;height:160px;border-radius:var(--r-sm);object-fit:cover;margin-bottom:1rem;box-shadow:var(--shadow);transition:var(--transition)}.step-card:hover .step-img{transform:translateY(-6px);box-shadow:var(--shadow-lg)}.step-title{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.5rem}.step-desc{font-size:.9rem;color:var(--text-mid);line-height:1.4}.benefits{background:var(--cream);padding:100px 0}.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}.benefit-card{padding:40px 32px;border-radius:var(--r);background:var(--warm-white);border:1px solid var(--border);transition:var(--transition);position:relative;overflow:hidden}.benefit-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--pink-light));opacity:0;transition:var(--transition)}.benefit-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}.benefit-card:hover::before{opacity:1}.benefit-icon{width:80px;height:80px;border-radius:20px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:2.6rem;margin-bottom:1.6rem;transition:var(--transition);line-height:1}.benefit-card h3{font-size:1.15rem;margin-bottom:.8rem}.benefit-card p{font-size:.92rem;line-height:1.65;margin-bottom:0}.benefits-cta{text-align:center;margin-top:48px}.club-features{--pink:#F4A2B6;--pink-light:#FCE4E9;background:var(--warm-white);padding:100px 0;overflow:visible}.slider-frame{background:linear-gradient(145deg,#fff 0,var(--warm-white) 100%);border-radius:48px;padding:30px 20px 40px 20px;box-shadow:0 20px 35px -10px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.5);transition:box-shadow .3s ease;overflow:visible}.slider-wrap{overflow-x:auto;overflow-y:visible;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding:14px 8px 20px;margin:0 -20px 0 0}.slider-wrap::-webkit-scrollbar{height:4px}.slider-wrap::-webkit-scrollbar-track{background:var(--border);border-radius:4px}.slider-wrap::-webkit-scrollbar-thumb{background:var(--pink);border-radius:4px}.slider-track{display:flex;gap:24px;padding:10px 0;min-width:max-content}.feature-slide{scroll-snap-align:start;flex:0 0 auto;width:320px;margin:0 8px;background:var(--cream);border-radius:var(--r);padding:32px 28px;border:1px solid var(--border);box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease;display:flex;flex-direction:column;will-change:transform}.feature-slide:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}.feature-num{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--pink);color:#fdf3f3;font-size:1rem;font-weight:700;margin-bottom:1.2rem;flex-shrink:0}.feature-slide h3{font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:.8rem;min-height:52px;display:flex;align-items:center}.feature-slide p{font-size:.88rem;line-height:1.65;color:var(--text-mid);min-height:4.8em}.feature-slide ul{list-style:none;margin-top:auto;padding-top:.8rem;margin-bottom:0}.feature-slide li{font-size:.88rem;line-height:1.55;color:var(--text-mid);padding:6px 0 6px 20px;position:relative;border-bottom:1px solid var(--border)}.feature-slide li:last-child{border-bottom:none}.feature-slide li::before{content:'✓';position:absolute;left:0;top:6px;color:var(--pink);font-weight:700;font-size:.85rem;line-height:1.55}.slider-controls{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:20px}.slider-btn{width:52px;height:52px;border-radius:50%;background:var(--warm-white);border:2px solid var(--border);color:var(--pink);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--transition);box-shadow:var(--shadow)}.slider-btn:hover{background:var(--pink);color:#fdf3f3;border-color:var(--pink);transform:scale(1.08)}.slider-dots{display:flex;gap:8px}.slider-dot{width:8px;height:8px;border-radius:50%;background:var(--pink-light);border:none;cursor:pointer;transition:var(--transition);padding:0}.slider-dot.active{background:var(--pink);width:24px;border-radius:4px}.feature-slide{overflow:visible}.if-you{background:var(--cream);padding:100px 0}.if-you-inner{max-width:780px;margin:0 auto}.if-you-card{background:var(--warm-white);border-radius:var(--r);padding:52px 56px;border:1px solid var(--border);box-shadow:var(--shadow-lg);text-align:center}.if-you-card h2{margin-bottom:.5rem}.if-you-list{list-style:none;text-align:left;margin:2rem 0 2rem}.if-you-list li{display:flex;align-items:flex-start;gap:14px;font-size:1rem;line-height:1.65;color:var(--text-mid);padding:12px 0;border-bottom:1px solid var(--border)}.if-you-list li:last-child{border-bottom:none}.if-you-list li::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--pink);flex-shrink:0;margin-top:7px}.if-you-conclusion{font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:.6rem}.if-you-conclusion span{color:var(--pink)}.pricing{background:var(--warm-white);padding:100px 0}.pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:860px;margin:0 auto}.pricing-card{background:var(--cream);border-radius:var(--r);padding:44px 36px;border:1px solid var(--border);box-shadow:var(--shadow);transition:var(--transition);position:relative;overflow:hidden;display:flex;flex-direction:column}.pricing-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}.pricing-card.popular{background:linear-gradient(135deg,#fff5f7,#faf7f2);border:2px solid var(--pink-light)}.popular-badge{position:absolute;top:80px;right:-20px;background:var(--pink);color:#fdf3f3;padding:6px 35px;transform:rotate(45deg) translateX(10px);transform-origin:top right;font-weight:700;font-size:.8rem;letter-spacing:.05em;white-space:nowrap;text-align:center;z-index:2;box-shadow:0 2px 5px rgba(0,0,0,.1)}.pricing-name{font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:.2rem}.pricing-price{font-family:'Century Gothic',CenturyGothic,AppleGothic,sans-serif;font-size:3.2rem;font-weight:600;color:var(--pink);line-height:1;margin:1.2rem 0 .2rem;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.pricing-price .old{font-size:1.4rem;color:var(--text-light);text-decoration:line-through;font-weight:400}.pricing-period{font-size:.82rem;color:var(--text-light);font-weight:600;margin-bottom:1.8rem}.pricing-divider{height:1px;background:var(--border);margin-bottom:1.6rem}.pricing-features{list-style:none;flex-grow:1;margin-bottom:1.8rem}.pricing-features li{padding:10px 0 10px 0;border-bottom:1px solid var(--border);font-size:.9rem;line-height:1.55;color:var(--text-mid)}.pricing-features li:last-child{border-bottom:none}.pricing-features li strong{display:block;font-size:.95rem;color:var(--text);margin-bottom:3px}.pricing-features li.disabled{opacity:.5;text-decoration:line-through}.pricing-features li.disabled strong{color:var(--text-light)}.pricing-card .btn{width:100%;margin-top:auto}.pricing-note{max-width:860px;margin:36px auto 0;background:rgba(212,118,138,.06);border-radius:var(--r);padding:28px 36px;border:1px solid var(--pink-light);text-align:center}.pricing-note h3{font-size:1rem;color:var(--text);margin-bottom:.8rem}.pricing-note p{font-size:.95rem;margin:0}.author-point{background:var(--cream);padding:100px 0}.author-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:52px}.author-img{width:100%;aspect-ratio:1;border-radius:var(--r);object-fit:cover;box-shadow:var(--shadow);transition:var(--transition)}.author-img:hover{transform:scale(1.04) translateY(-4px);box-shadow:var(--shadow-lg)}.author-caption{text-align:center;margin-top:36px}.author-caption p{font-size:1.1rem;font-weight:600;color:var(--text)}.reviews{background:var(--warm-white);padding:100px 0;overflow:hidden}.reviews-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px}.reviews-count{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--text-light)}.rev-track-wrap{position:relative}.rev-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:12px 8px 28px 8px;scrollbar-width:none}.rev-track::-webkit-scrollbar{display:none}.rev-slide{flex-shrink:0;width:280px;scroll-snap-align:start;overflow:visible;padding:4px}.rev-slide img{width:100%;height:auto;display:block;border-radius:var(--r-sm);border:1px solid var(--border);box-shadow:0 2px 16px rgba(44,36,32,.06);transition:box-shadow .4s ease,transform .4s ease}.rev-slide:hover img{box-shadow:0 20px 60px rgba(44,36,32,.14);transform:translateY(-5px)}.rev-nav{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:36px}.rev-btn{width:48px;height:48px;border-radius:50%;background:var(--cream);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;font-weight:700;color:var(--text-mid);transition:var(--transition)}.rev-btn:hover{background:var(--pink);color:#fdf3f3;border-color:var(--pink)}.rev-dots{display:flex;gap:6px}.rev-dot{width:8px;height:8px;border-radius:50%;background:var(--border);cursor:pointer;transition:var(--transition)}.rev-dot.active{background:var(--pink);width:24px;border-radius:4px}.faq{background:var(--cream);padding:100px 0}.faq-inner{max-width:760px;margin:0 auto;margin-top:56px}.faq-item{margin-bottom:12px;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);background:var(--warm-white)}.faq-question{padding:20px 28px;cursor:pointer;font-weight:700;font-size:1rem;color:var(--text);position:relative;transition:var(--transition);display:flex;align-items:center;justify-content:space-between;gap:16px;user-select:none}.faq-question:hover{color:var(--pink);background:rgba(212,118,138,.04)}.faq-question .faq-icon{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;transition:var(--transition);color:var(--text);line-height:1}.faq-question.active{color:var(--pink)}.faq-question.active .faq-icon{background:var(--pink);color:#fdf3f3;transform:rotate(45deg)}.faq-answer{max-height:0;overflow:hidden;transition:max-height .45s ease,padding .45s ease}.faq-answer.active{max-height:600px}.faq-answer-inner{padding:0 28px 20px}.faq-answer-inner p{font-size:.95rem;line-height:1.7;color:var(--text-mid);margin:0}.faq-footer{text-align:center;margin-top:52px;max-width:700px;margin-left:auto;margin-right:auto}.faq-footer p{font-size:.95rem;color:var(--text-mid);margin-bottom:1.4rem;font-style:italic}.faq-footer strong{color:var(--text)}footer{background:#2c2420;padding:72px 0 36px;position:relative;overflow:hidden}footer::before{content:'';position:absolute;top:-120px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(212,118,138,.12) 0,transparent 65%);border-radius:50%;pointer-events:none}.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}.foot-brand .logo{color:rgba(255,255,255,.9);margin-bottom:.8rem;display:block}.foot-brand .logo span{color:var(--pink-light)}.foot-brand p{font-size:.9rem;color:rgba(255,255,255,.45);line-height:1.7;margin:0}.foot-col h4{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid rgba(255,255,255,.08)}.foot-col ul{list-style:none}.foot-col ul li{margin-bottom:.7rem}.foot-col ul li::before{display:none}.foot-col a{color:rgba(255,255,255,.55);text-decoration:none;font-size:.9rem;transition:var(--transition)}.foot-col a:hover{color:var(--pink-light);padding-left:4px}.foot-bottom{padding-top:28px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}.foot-bottom p{font-size:.82rem;color:rgba(255,255,255,.3);margin:0}.foot-social{display:flex;gap:10px}.foot-soc-btn{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:.9rem;transition:var(--transition)}.foot-soc-btn:hover{background:var(--pink);border-color:var(--pink);color:#fff}@media (max-width:1024px){.hero-inner{grid-template-columns:1fr;gap:48px}.hero-photo-col{max-width:480px;margin:0 auto}.steps-grid{grid-template-columns:repeat(2,1fr)}.steps-grid::before{display:none}.benefits-grid{grid-template-columns:repeat(2,1fr)}.author-gallery{grid-template-columns:repeat(2,1fr)}.testimonials-grid{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr 1fr;gap:32px}}@media (max-width:768px){section{padding:72px 0}nav{display:none}nav.open{display:block;position:fixed;top:62px;left:0;right:0;background:rgba(250,247,242,.97);backdrop-filter:blur(20px);padding:16px;border-bottom:1px solid var(--border);z-index:999}nav.open ul{flex-direction:column;gap:2px}.mobile-btn{display:block}.benefits-grid{grid-template-columns:1fr}.pricing-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}.foot-grid{grid-template-columns:1fr;gap:28px}.foot-bottom{flex-direction:column;text-align:center}.if-you-card{padding:36px 28px}
+/* Убрано скрытие фото на мобильных */
+.hero-photo-col{display:block; margin-bottom:2rem}}
+@media (max-width:576px){.steps-grid{grid-template-columns:1fr}.author-gallery{grid-template-columns:repeat(2,1fr)}.testimonials-grid{grid-template-columns:1fr}h1{font-size:2.2rem}h2{font-size:1.8rem}}</style>
+</head>
+<body>
+<header id=hdr>
+<div class="container header-inner">
+<a href=#hero class=logo>Фабрика <span>Заготовок</span></a>
+<nav id=nav>
+<ul>
+<li><a href=#hero>О клубе</a></li>
+<li><a href=#how-it-works>Как работает</a></li>
+<li><a href=#benefits>Преимущества</a></li>
+<li><a href=#club-features>Программа</a></li>
+<li><a href=#pricing>Тарифы</a></li>
+<li><a href=#reviews>Отзывы</a></li>
+<li><a href=#faq>FAQ</a></li>
+<li><a href=#pricing class=btn style=margin-left:8px>Получить доступ</a></li>
+</ul>
+</nav>
+<button class=mobile-btn id=mbtn aria-label=Меню>☰</button>
+</div>
+</header>
+
+<section class=hero id=hero>
+<div class=hero-noise></div>
+<div class=container>
+<div class=hero-inner>
+<div class=hero-content>
+<div class="hero-eyebrow reveal">Кулинарный клуб Веры Малыгиной</div>
+<h1 class="hero-title reveal reveal-delay-1">Клуб <span>Фабрика заготовок</span></h1>
+<p class="hero-sub reveal reveal-delay-1">Целая СИСТЕМА по упрощению и оптимизации быта, которая&nbsp;помогает:</p>
+<ul class="hero-list reveal reveal-delay-2">
+<li>Экономить до 10 часов в неделю.</li>
+<li>Делать грамотные закупки, готовить безотходно и экономить до 40% бюджета на продукты.</li>
+<li>Всегда иметь под рукой разнообразные и полезные блюда и минимизировать вредные перекусы и срывы.</li>
+<li>Легко контролировать калорийность, плавно снижать или поддерживать вес без стресса.</li>
+</ul>
+<div class="hero-highlight reveal reveal-delay-2">
+Вас ждёт более <span>90 рецептов заготовок</span> и <span>180+ вариантов</span> их приготовления и использования!
+</div>
+<div class="hero-actions reveal reveal-delay-3">
+<a href=#pricing class=btn>Получить доступ к клубу →</a>
+<a href=#how-it-works class="btn btn-ghost">Как работает?</a>
+</div>
+</div>
+<div class="hero-photo-col reveal">
+<div class=hero-photo-frame>
+<img src="https://i.ibb.co/gsgvLcv/i-1.png" alt="Кулинарный клуб">
+</div>
+<div class=hero-badge>
+<div class=b-icon>🏆</div>
+<div class=b-text>
+<strong>4 000 участниц</strong>
+<span>в клубе «Фабрика заготовок»</span>
+</div>
+</div>
+<div class=hero-tag>с 2025 года</div>
+</div>
+</div>
+</div>
+</section>
+
+<div style="height:56px;background:linear-gradient(to bottom,var(--cream),var(--warm-white))"></div>
+
+<section class=how-it-works id=how-it-works>
+<div class=container>
+<div class="section-header reveal">
+<span class=label>Система</span>
+<h2>Как работают заготовки на самом деле?</h2>
+</div>
+<div class=steps-grid>
+<div class="step-card reveal reveal-delay-1">
+<div class=step-num-circle>01</div>
+<div class=step-title>Планирование покупок</div>
+<div class=step-desc>Грамотное планирование и удобный список покупок исключает спонтанные траты и помогает экономить бюджет</div>
+</div>
+<div class="step-card reveal reveal-delay-2">
+<div class=step-num-circle>02</div>
+<div class=step-title>Приготовление</div>
+<div class=step-desc>Вы превращаете продукты в набор разнообразных полуфабрикатов, которые любите вы и ваша семья</div>
+</div>
+<div class="step-card reveal reveal-delay-3">
+<div class=step-num-circle>03</div>
+<div class=step-title>Заготовки</div>
+<div class=step-desc>Вы упаковываете, замораживаете и храните заготовки с учётом всех норм, чтобы сохранить максимум&nbsp;вкуса</div>
+</div>
+<div class="step-card reveal reveal-delay-4">
+<div class=step-num-circle>04</div>
+<div class=step-title>Быстрая готовка</div>
+<div class=step-desc>Вы за считанные минуты, буквально по щелчку пальцев, собираете блюда из заготовок</div>
+</div>
+</div>
+</div>
+</section>
+
+<div style="height:56px;background:linear-gradient(to bottom,var(--warm-white),var(--cream))"></div>
+
+<section class=benefits id=benefits>
+<div class=container>
+<div class="section-header reveal">
+<span class=label>Преимущества</span>
+<h2>Благодаря системному подходу<br>в заготовках <span style=color:#d4768a>ВЫ&nbsp;СМОЖЕТЕ</span></h2>
+</div>
+<div class=benefits-grid>
+<div class="benefit-card reveal reveal-delay-1">
+<div class=benefit-icon>⏰</div>
+<h3>Экономить до 10 часов в&nbsp;неделю!</h3>
+<p>Просто оптимизируя бытовые процессы! Вы особенно оцените это в моменты пиковой нагрузки — например, поздним вечером после работы, когда у вас уже будет готовый полезный ужин.</p>
+</div>
+<div class="benefit-card reveal reveal-delay-2">
+<div class=benefit-icon>🥗</div>
+<h3>Организовать здоровый рацион без усилий</h3>
+<p>Вы сможете создать свою систему питания, где еда будет работать «на вас», меню будет разнообразным, а рацион более сбалансированным.</p>
+</div>
+<div class="benefit-card reveal reveal-delay-3">
+<div class=benefit-icon>💳</div>
+<h3>Экономить семейный бюджет</h3>
+<p>Рационально расходовать средства с помощью грамотных закупок и безотходной готовки. С помощью этой системы я сэкономила нашей семье более 200 тысяч за год, без экономии на качестве!</p>
+</div>
+</div>
+<div class="benefits-cta reveal">
+<a href=#club-features class=btn>Изучить программу клуба</a>
+</div>
+</div>
+</section>
+
+<div style="height:56px;background:linear-gradient(to bottom,var(--cream),var(--warm-white))"></div>
+
+<section class=club-features id=club-features>
+<div class=container>
+<div class="section-header reveal">
+<span class=label>Программа</span>
+<h2>В клубе вас ждёт</h2>
+<p>8 блоков, 6 разделов с рецептами: более 90 рецептов заготовок и 180+ вариаций их&nbsp;приготовления!</p>
+</div>
+<div class=slider-frame>
+<div class=slider-wrap>
+<div class=slider-track>
+<div class=feature-slide>
+<div class=feature-num>1</div>
+<h3>Ревизия и наведение порядка</h3>
+<p>Советы по ревизии и наведению порядка на кухне, а также лайфхаки по планированию меню и рациона.</p>
+<ul>
+<li>Использовать забытые продукты</li>
+<li>Рассчитывать объем закупки и закупаться в магазине один раз</li>
+<li>Избавиться от лишнего и очистить&nbsp;пространство</li>
+</ul>
+</div>
+<div class=feature-slide>
+<div class=feature-num>2</div>
+<h3>Основные правила заготовок</h3>
+<p>Вся необходимая информация, которая закроет вопросы по заготовкам: о заморозке, разморозке, хранению и&nbsp;приготовлению!</p>
+<ul>
+<li>Замораживать без потери вкуса&nbsp;и&nbsp;качества</li>
+<li>Понимать, какие продукты теряют вкус после разморозки</li>
+<li>Определять, какие блюда можно заготовить впрок</li>
+</ul>
+</div>
+<div class=feature-slide>
+<div class=feature-num>3</div>
+<h3>Организация пространства</h3>
+<p>Советы по хранению заготовок и таре для них, всё о вакуумации, подборка кухонной утвари с прямыми ссылками!</p>
+<ul>
+<li>Выбрать необходимую кухонную&nbsp;утварь</li>
+<li>Удобно и компактно хранить&nbsp;заготовки</li>
+<li>Оптимизировать пространство на&nbsp;кухне</li>
+</ul>
+</div>
+<div class=feature-slide>
+<div class=feature-num>4</div>
+<h3>О питании с нутрициологом</h3>
+<p>Материалы от сертифицированного специалиста о ЗДОРОВОМ подходе&nbsp;к&nbsp;питанию!</p>
+<ul>
+<li>Разобраться в основах здорового&nbsp;питания</li>
+<li>Узнать о методах снижения/набора веса</li>
+<li>Применять подсчёт БЖУ и правило тарелки</li>
+</ul>
+</div>
+<div class=feature-slide>
+<div class=feature-num>5</div>
+<h3>Рецепты</h3>
+<p>РАЗДЕЛЫ: овощи, птица, мясо, рыба, творог, выпечка, паштеты. Более 90+ рецептов заготовок с видео-инструкциями и PDF-конспектами.</p>
+<ul>
+<li>Не ломать голову «что&nbsp;приготовить?»</li>
+<li>Готовить 1 раз на 1–2 недели&nbsp;вперёд</li>
+<li>Иметь разнообразное меню</li>
+</ul>
+</div>
+<div class=feature-slide>
+<div class=feature-num>6</div>
+<h3>СМАРТ заготовки</h3>
+<p>Комбинирование заготовок между собой для получения вкусных и интересных блюд. 27 полноценных рецептов из заготовок!</p>
+<ul>
+<li>Готовить без усилий</li>
+<li>Экспериментировать с сочетаниями</li>
+<li>Создавать комплексные блюда</li>
+</ul>
+</div>
+<div class=feature-slide>
+<div class=feature-num>7</div>
+<h3>Конструктор</h3>
+<p>Заготавливаем одну основу, а начинка, подача и применение может быть разным!</p>
+<ul>
+<li>ПП пиццы и 19 вариаций начинок</li>
+<li>18 вариаций заготовок для&nbsp;напитков</li>
+<li>Куриные вафли и идеи по&nbsp;их&nbsp;подаче</li>
+</ul>
+</div>
+<div class=feature-slide>
+<div class=feature-num>8</div>
+<h3>Для праздника</h3>
+<p>Больше не стоим у плиты в праздник по 5–10 часов. Готовое праздничное меню с использованием заготовок!</p>
+<ul>
+<li>23 рецепта для праздничного&nbsp;стола</li>
+<li>8 рецептов функциональных праздничных заготовок</li>
+<li>Подборка посуды и декора</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=slider-controls>
+<button class="slider-btn prev" aria-label=Назад><i class="fas fa-chevron-left"></i></button>
+<div class=slider-dots></div>
+<button class="slider-btn next" aria-label=Вперёд><i class="fas fa-chevron-right"></i></button>
+</div>
+</div>
+</div>
+</section>
+
+<section class=pricing id=pricing>
+<div class=container>
+<div class="section-header reveal">
+<h2>Тарифы</h2>
+<p>Выберите подходящий вариант участия в клубе</p>
+</div>
+<div class=pricing-grid>
+<!-- Расширенный (Популярный) — первый -->
+<div class="pricing-card popular reveal reveal-delay-1">
+<div class=popular-badge>Популярный</div>
+<div class=pricing-name>Расширенный</div>
+<div class=pricing-price>4 990 ₽ <span class=old>5 390 ₽</span></div>
+<span class=price-note style=display:inline-block;margin-top:16px;color:#777;opacity:.7>Оплачивайте 1 раз, пользуйтесь материалами всю жизнь!</span>
+<div class=pricing-divider></div>
+<ul class=pricing-features>
+<li><strong>РЕВИЗИЯ И ПЛАН МЕНЮ</strong>«Расхламление» кухни, наведение порядка в холодильнике и шкафчиках. Составление меню и планирование закупок по формуле.</li>
+<li><strong>ПРАВИЛА ЗАГОТОВОК</strong>Какие продукты можно замораживать, а какие нет. Как правильно замораживать и размораживать без потери вкуса и качества.</li>
+<li><strong>ОРГАНИЗАЦИЯ ПРОСТРАНСТВА</strong>Правила хранения заготовок. Вакуумная упаковка. Подборка необходимой кухонной&nbsp;утвари.</li>
+<li><strong>РЕЦЕПТЫ (7 разделов)</strong>Овощи, птица, мясо, рыба, творог, паштеты, выпечка. Видеорецепты и конспекты с КБЖУ на 100 г.</li>
+<li><strong>ПИТАНИЕ ОТ НУТРИЦИОЛОГА</strong>Подкаст о питании, КБЖУ, похудении и пищевых ограничениях. Статья о подсчёте КБЖУ и «правиле тарелки».</li>
+<li><strong>СМАРТ-ЗАГОТОВКИ</strong>27 рецептов приготовления заготовок. Видео и конспекты с этими рецептами.</li>
+<li><strong>КОНСТРУКТОР БЛЮД</strong>ПП-пицца + 19 вариантов начинки. 18 вариантов заготовок для смузи и напитков. Куриные вафли.</li>
+<li><strong>ДЛЯ ПРАЗДНИКА</strong>3 раздела: салаты и закуски, горячее, десерты. 24 рецепта + 8 функциональных заготовок. Подборка посуды и декора.</li>
+<li><strong>ЧАТ ДЛЯ ОБЩЕНИЯ</strong>Закрытое сообщество для общения, обмена опытом и консультаций.</li>
+</ul>
+<a href=# class=btn>Выбрать тариф →</a>
+</div>
+<!-- Базовый — второй -->
+<div class="pricing-card reveal reveal-delay-2">
+<div class=pricing-name>Базовый</div>
+<div class=pricing-price>3 890 ₽ <span class=old>4 190 ₽</span></div>
+<span class=price-note style=display:inline-block;margin-top:16px;color:#777;opacity:.7>Оплачивайте 1 раз, пользуйтесь материалами всю жизнь!</span>
+<div class=pricing-divider></div>
+<ul class=pricing-features>
+<li><strong>РЕВИЗИЯ И ПЛАН МЕНЮ</strong>«Расхламление» кухни, наведение порядка в холодильнике и шкафчиках. Составление меню и планирование закупок по формуле.</li>
+<li><strong>ПРАВИЛА ЗАГОТОВОК</strong>Какие продукты можно замораживать, а какие нет. Как правильно замораживать и размораживать без потери вкуса и качества.</li>
+<li><strong>ОРГАНИЗАЦИЯ ПРОСТРАНСТВА</strong>Правила хранения заготовок. Вакуумная упаковка. Подборка необходимой кухонной&nbsp;утвари.</li>
+<li><strong>РЕЦЕПТЫ (6 разделов)</strong>Овощи, птица, мясо, рыба, творог, паштеты. Видеорецепты и структурированные конспекты с КБЖУ на 100 г.</li>
+<li class=disabled><strong>ПИТАНИЕ ОТ НУТРИЦИОЛОГА</strong>Подкаст о питании, КБЖУ, похудении и пищевых ограничениях. Статья о подсчёте КБЖУ и «правиле тарелки».</li>
+<li class=disabled><strong>СМАРТ-ЗАГОТОВКИ</strong>27 рецептов приготовления заготовок. Видео&nbsp;и&nbsp;конспекты.</li>
+<li class=disabled><strong>КОНСТРУКТОР БЛЮД</strong>ПП-пицца + 19 вариантов начинки. 18 вариантов заготовок для смузи. Куриные&nbsp;вафли.</li>
+<li class=disabled><strong>ДЛЯ ПРАЗДНИКА</strong>3 раздела: салаты, горячее, десерты. 24 рецепта + 8 функциональных заготовок.</li>
+<li class=disabled><strong>ЧАТ ДЛЯ ОБЩЕНИЯ</strong>Закрытое сообщество для общения, обмена опытом и консультаций.</li>
+</ul>
+<a href=# class="btn btn-ghost">Выбрать тариф</a>
+</div>
+</div>
+</div>
+</section>
+
+<div style="height:56px;background:linear-gradient(to bottom,var(--warm-white),var(--cream))"></div>
+
+<section class=author-point id=author-point>
+<div class=container>
+<div class="section-header reveal">
+<span class=label>Результаты</span>
+<h2>Примеры блюд из заготовок</h2>
+<p>В основе клуба я заложила свой опыт — каждое из этих блюд я приготовила по системе заготовок</p>
+</div>
+<div class=author-gallery>
+<img src="https://i.ibb.co/JjXRhb1W/11.jpg" alt="Блюдо 1" class="author-img reveal reveal-delay-1">
+<img src="https://i.ibb.co/LXTrkh3D/22.jpg" alt="Блюдо 2" class="author-img reveal reveal-delay-2">
+<img src="https://i.ibb.co/gbMbpdnR/33.jpg" alt="Блюдо 3" class="author-img reveal reveal-delay-3">
+<img src="https://i.ibb.co/zV5vQck3/44.jpg" alt="Блюдо 4" class="author-img reveal reveal-delay-4">
+</div>
+<div class="author-caption reveal">
+<p>Все эти рецепты ждут вас в клубе!</p>
+<a href=#pricing class=btn style=margin-top:1.2rem>Получить доступ</a>
+</div>
+</div>
+</section>
+
+<div style="height:56px;background:linear-gradient(to bottom,var(--cream),var(--warm-white))"></div>
+
+<section class=reviews id=reviews>
+<div class=container>
+<div class="reviews-head reveal">
+<div>
+<h2 style=color:#d4768a>Что говорят участницы</h2>
+</div>
+<div class=reviews-count style="font-family:'Century Gothic',CenturyGothic,AppleGothic,sans-serif;font-style:normal">Уже <strong>4 000+</strong> участниц 🔥</div>
+</div>
+<div class="rev-track-wrap reveal">
+<div class="rev-track" id="revTrack">
+<div class="rev-slide"><img src="https://i.ibb.co/9HF4qhG4/1.jpg" alt="1"></div>
+<div class="rev-slide"><img src="https://i.ibb.co/rfNyh2ff/2.jpg" alt="2"></div>
+<div class="rev-slide"><img src="https://i.ibb.co/MxNbtTr1/3.jpg" alt="3"></div>
+<div class="rev-slide"><img src="https://i.ibb.co/8n5KKG5d/4.jpg" alt="4"></div>
+<div class="rev-slide"><img src="https://i.ibb.co/pj6bF3Qz/5.jpg" alt="5"></div>
+<div class="rev-slide"><img src="https://i.ibb.co/sdfrT5QN/6.jpg" alt="6"></div>
+<div class="rev-slide"><img src="https://i.ibb.co/6RTjBvrp/7.jpg" alt="7"></div>
+<div class="rev-slide"><img src="https://i.ibb.co/HfDZrCdh/8.jpg" alt="8"></div>
+<div class="rev-slide"><img src="https://i.ibb.co/jv8Q6nWG/9.jpg" alt="9"></div>
+</div>
+</div>
+<div class=rev-nav>
+<button class=rev-btn id=revPrev>&#8249;</button>
+<div class=rev-dots id=revDots></div>
+<button class=rev-btn id=revNext>&#8250;</button>
+</div>
+</div>
+<div style=text-align:center;margin-top:48px>
+<a href=#pricing class=btn style="background:#d4768a;color:#fff;padding:16px 40px;border-radius:60px;text-decoration:none;font-weight:700;font-size:18px;display:inline-block;transition:all .3s ease;box-shadow:0 4px 12px rgba(0,0,0,.1)">Стать участницей клуба →</a>
+</div>
+</section>
+
+<section class=faq id=faq>
+<div class=container>
+<div class="section-header reveal">
+<span class=label>Вопросы</span>
+<h2>Часто задаваемые вопросы</h2>
+</div>
+<div class=faq-inner>
+<div class="faq-item reveal reveal-delay-1">
+<div class=faq-question onclick=toggleFaq(this)>🤍 Насколько доступ к материалам?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>Навсегда, без ограничений и ежемесячных подписок! 😍</p></div></div>
+</div>
+<div class="faq-item reveal reveal-delay-1">
+<div class=faq-question onclick=toggleFaq(this)>🤍 Где находятся материалы клуба?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>В закрытом Telegram-канале, на Яндекс и Google диске 🫶</p></div></div>
+</div>
+<div class="faq-item reveal reveal-delay-2">
+<div class=faq-question onclick=toggleFaq(this)>🤍 Можно оплатить частями?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>Да, через «Долями», «Яндекс Сплит» или рассрочку от банка🤗 Если нужна помощь — пишите в службу заботы: @zabota_veramlgn</p></div></div>
+</div>
+<div class="faq-item reveal reveal-delay-2">
+<div class=faq-question onclick=toggleFaq(this)>🤍 Можно оплатить из другой страны?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>Конечно, принимаем оплаты из любой точки Мира! Если нужна помощь — пишите в службу заботы: @zabota_veramlgn</p></div></div>
+</div>
+<div class="faq-item reveal reveal-delay-3">
+<div class=faq-question onclick=toggleFaq(this)>🤍 Подходят ли рецепты для ПП и здорового питания?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>Да! ~90% рецептов сбалансированы. К каждому указано КБЖУ на 100 гр. Есть материалы от нутрициолога 💛</p></div></div>
+</div>
+<div class="faq-item reveal reveal-delay-3">
+<div class=faq-question onclick=toggleFaq(this)>🤍 Какой формат рецептов?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>Удобные разделы (мясо, птица, овощи, творог, рыба, выпечка, паштеты). В каждом: видео-рецепты + PDF-конспекты с пошаговыми рецептами и списками покупок.</p></div></div>
+</div>
+<div class="faq-item reveal reveal-delay-4">
+<div class=faq-question onclick=toggleFaq(this)>🤍 Подходит ли новичкам?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>Да! Всё просто: есть инструкции по хранению, упаковке, заморозке и 90+ пошаговых рецептов без сложных ингредиентов👌</p></div></div>
+</div>
+<div class="faq-item reveal reveal-delay-4">
+<div class=faq-question onclick=toggleFaq(this)>🤍 С чего начать изучение?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>С ревизии, затем — по блокам. Готовьте так, как удобно: по разделам или выбирая понравившиеся рецепты🤗</p></div></div>
+</div>
+<div class="faq-item reveal reveal-delay-4">
+<div class=faq-question onclick=toggleFaq(this)>🤍 Будут ли пополнения новыми материалами?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>Нет, это целостный продукт, а не подписка. Все материалы — ваши навсегда ✅</p></div></div>
+</div>
+<div class="faq-item reveal reveal-delay-4">
+<div class=faq-question onclick=toggleFaq(this)>🤍 Нужна ли особенная техника?<span class=faq-icon>+</span></div>
+<div class=faq-answer><div class=faq-answer-inner><p>Нет, только базовое: духовка, плита, сковорода, блендер, скалка и т.д.</p></div></div>
+</div>
+</div>
+<div class="faq-footer reveal">
+  <div class="faq-footer reveal">
+<a href="https://t.me/zabota_veramlgn" class="btn" style="background: #D4768A; margin-bottom: 96px; display: inline-block;">Связаться со службой заботы →</a>
+</div>
+<p><strong style=font-style:normal>Клуб — это система заготовок по упрощению процесса питания и быта!</strong></p>
+<p style="font-style: normal;">Это БАЗА, из которой вы сделаете свой личный островок безопасности в питании и быту, взяв полюбившиеся рецепты, придумывая свои альтернативы и экспериментируя с подачей заготовок к столу!</p>
+<a href=#pricing class=btn>Выбрать тариф и вступить в клуб →</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class=container>
+<div class=foot-grid>
+<div class=foot-brand>
+<a href=#hero class=logo>Фабрика <span>Заготовок</span></a>
+<p style=margin-top:.8rem>Кулинарный клуб Веры Малыгиной — система заготовок для удобного, вкусного и здорового питания.</p>
+</div>
+<div class=foot-col>
+<h4>Информация</h4>
+<ul>
+<li>ИП Малыгина Вера Николаевна</li>
+<li><a href=https://disk.yandex.ru/i/sDY8_G_OsyiZ8g target=_blank>Реквизиты</a></li>
+<li><a href=https://clck.ru/3RY9kk target=_blank>Оферта</a></li>
+</ul>
+</div>
+<div class=foot-col>
+<h4>Документы</h4>
+<ul>
+<li><a href=https://disk.yandex.ru/i/TpVA_h_RWP1UyQ target=_blank>Согласие на рассылку</a></li>
+<li><a href=https://disk.yandex.ru/i/3RzYTim7hZO0Nw target=_blank>Согласие&nbsp;на&nbsp;обработку&nbsp;ПД</a></li>
+<li><a href=https://disk.yandex.ru/i/vIxEZ0HkXsj42Q target=_blank>Политика обработки ПД</a></li>
+</ul>
+</div>
+<div class=foot-col>
+<h4>Контакты</h4>
+<ul>
+<li><a href=https://t.me/+ces7gQS4YXA0NmUy target=_blank>Telegram</a></li>
+<li><a href=https://vk.ru/im/channels/-234363549 target=_blank>ВКонтакте</a></li>
+<li><a href=https://max.ru/vera_mlgn_fabrika target=_blank>MAX</a></li>
+<li><a href="https://dzen.ru/zagotovki_veramlgn?share_to=link" target=_blank>Яндекс Дзен</a></li>
+<li>Служба заботы: zabotaveramlgn@yandex.ru</li>
+</ul>
+</div>
+</div>
+<div class=foot-bottom>
+<p>© 2025 Фабрика Заготовок. Все права защищены.</p>
+<div class=foot-social></div>
+</div>
+</div>
+</footer>
+
+<script>
+const mbtn=document.getElementById("mbtn"),nav=document.getElementById("nav");
+mbtn.addEventListener("click",(()=>{nav.classList.toggle("open"),mbtn.textContent=nav.classList.contains("open")?"✕":"☰"}));
+document.querySelectorAll("nav a").forEach((e=>{e.addEventListener("click",(()=>{nav.classList.remove("open"),mbtn.textContent="☰"}))}));
+const revealObserver=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting&&(e.target.classList.add("visible"),revealObserver.unobserve(e.target))}))}),{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+function toggleFaq(e){const t=e.parentElement.querySelector(".faq-answer"),r=e.classList.contains("active");document.querySelectorAll(".faq-question.active").forEach((e=>{e.classList.remove("active"),e.parentElement.querySelector(".faq-answer").classList.remove("active"),e.querySelector(".faq-icon").textContent="+"})),r||(e.classList.add("active"),t.classList.add("active"),e.querySelector(".faq-icon").textContent="+")}
+document.querySelectorAll(".reveal").forEach((e=>revealObserver.observe(e)));
+(function(){const e=document.querySelector(".slider-wrap"),t=document.querySelector(".slider-track"),r=document.querySelector(".slider-dots"),n=document.querySelector(".slider-btn.prev"),l=document.querySelector(".slider-btn.next");let s=0;for(let e=0;e<6;e++){const t=document.createElement("button");t.className="slider-dot"+(0===e?" active":""),t.setAttribute("aria-label","Слайд "+(e+1)),t.addEventListener("click",(()=>a(e))),r.appendChild(t)}function o(r){const n=t.scrollWidth-e.clientWidth;return n<0?0:n/5*r}function c(n){const l=t.scrollWidth-e.clientWidth,o=l>0?n/l:0,c=Math.round(5*o);s=Math.max(0,Math.min(c,5)),r.querySelectorAll(".slider-dot").forEach(((e,t)=>{e.classList.toggle("active",t===s)}))}function a(t){s=Math.max(0,Math.min(t,5)),e.scrollTo({left:o(s),behavior:"smooth"}),r.querySelectorAll(".slider-dot").forEach(((e,t)=>{e.classList.toggle("active",t===s)}))}n.addEventListener("click",(()=>a(s-1))),l.addEventListener("click",(()=>a(s+1))),e.addEventListener("scroll",(()=>c(e.scrollLeft)),{passive:!0});let i=!1,d=0,u=0;e.addEventListener("mousedown",(t=>{i=!0,d=t.clientX,u=e.scrollLeft,e.style.cursor="grabbing",e.style.userSelect="none",e.style.scrollBehavior="auto"})),window.addEventListener("mousemove",(t=>{if(!i)return;const r=t.clientX-d;e.scrollLeft=u-r})),window.addEventListener("mouseup",(()=>{i&&(i=!1,e.style.cursor="",e.style.userSelect="",e.style.scrollBehavior="",c(e.scrollLeft))}))})();
+</script>
+<script>
+const track=document.getElementById("revTrack"),slides=track.querySelectorAll(".rev-slide"),dotsWrap=document.getElementById("revDots"),totalGroups=Math.ceil(slides.length/3);
+for(let e=0;e<totalGroups;e++){const t=document.createElement("div");t.className="rev-dot"+(0===e?" active":""),t.addEventListener("click",(()=>track.scrollTo({left:298*e*3,behavior:"smooth"}))),dotsWrap.appendChild(t)}
+function updateDots(){const e=Math.round(track.scrollLeft/894);dotsWrap.querySelectorAll(".rev-dot").forEach(((t,o)=>t.classList.toggle("active",o===e)))}
+document.getElementById("revPrev").addEventListener("click",(()=>track.scrollBy({left:-894,behavior:"smooth"})));
+document.getElementById("revNext").addEventListener("click",(()=>track.scrollBy({left:894,behavior:"slow"})));
+track.addEventListener("scroll",updateDots,{passive:!0});
+</script>
+</body>
+</html>
